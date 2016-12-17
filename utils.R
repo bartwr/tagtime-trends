@@ -3,8 +3,8 @@
 require("httr")
 
 parseLogfile <- function(logfile.url, regexes, perl) {
-  log <- content(GET(logfile.url))
-  log <- unlist(strsplit(log, "\n"))
+  log <- content(GET(logfile.url), "text")
+  log <- unlist(strsplit(log, "\n")) 
   log <- strsplit(log, " ")
   timestamps <- sapply(log, function(x) as.numeric(x[1]))
     # vector of unix timestamps corresponding to every ping
