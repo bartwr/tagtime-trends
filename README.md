@@ -1,30 +1,36 @@
 # Install dependencies
-sudo apt-get install libxml2-dev
+
+    sudo apt-get install libxml2-dev
 
 # First, run:
-R
+
+    R
 
 # Install packages now
-install.packages('shiny')
-install.packages('httr')
-install.packages('lattice')
-install.packages('Cairo')
-install.packages('xml2')
+
+    install.packages('shiny')
+    install.packages('httr')
+    install.packages('lattice')
+    install.packages('Cairo')
+    install.packages('xml2')
 
 # Now, run:
-library(shiny)
-runApp()
+
+    library(shiny)
+    runApp()
 
 ____
 
 # References
+
 Found this on this page:
 https://shiny.rstudio.com/articles/validation.html
 
 # Debug
+
 With: `cat("3\n")`
 
-# Deb if libxml2-dev not available
+# Do if libxml2-dev not available
 
 If: 
 libxml2-dev’ is not available (for R version 3.0.2) 

@@ -1,4 +1,4 @@
-global.R
+#global.R
 
 # Windows image file caches
 Thumbs.db
@@ -28,7 +28,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*

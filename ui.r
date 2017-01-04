@@ -1,3 +1,5 @@
+# require(shiny)
+
 shinyUI(fluidPage(
   titlePanel("Some things I do"), 
   
@@ -6,7 +8,7 @@ shinyUI(fluidPage(
       p("Display time use patterns from my ", 
         a("TagTime", href = "http://messymatters.com/tagtime/"), 
         " log file. (See my ", a("GitHub repo", 
-          href = "http://github.com/alexschell/tagtime-trends"), 
+          href = "http://github.com/bartwr/tagtime-trends"), 
         " for the code.)"), 
       
       selectInput("cat", 
@@ -103,7 +105,7 @@ shinyUI(fluidPage(
         selectInput("midnight", 
                     label = "Custom midnight", 
                     choices = 0:6, 
-                    selected = 0)
+                    selected = 3)
       )
     ), 
   
